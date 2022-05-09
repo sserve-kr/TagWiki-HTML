@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="kr">
+  <head>
+    <title>태그위키</title>
+    <meta
+      property="og:image"
+      content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/23212af9-6e07-4599-a081-581bb35f30ab/d27e55ef-eec4-4bb8-b5a1-a605dc5bebd2?org_if_sml=1"
+    />
+    <meta
+      property="og:description"
+      content="히토미, 이헨 등 태그 검색용 사이트"
+    />
+    <meta property="og:title" content="태그위키" />
+    <meta name="description" content="히토미, 이헨 등 태그 검색용 사이트" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:image"
+      content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/23212af9-6e07-4599-a081-581bb35f30ab/d27e55ef-eec4-4bb8-b5a1-a605dc5bebd2?org_if_sml=1"
+    />
+    <meta
+      property="og:description"
+      content="히토미, 이헨 등 태그 검색용 사이트"
+    />
+    <meta property="og:title" content="TagEditor - 태그위키" />
+    <meta name="description" content="히토미, 이헨 등 태그 검색용 사이트" />
+    <meta
+      property="og:image"
+      content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/23212af9-6e07-4599-a081-581bb35f30ab/d27e55ef-eec4-4bb8-b5a1-a605dc5bebd2?org_if_sml=1"
+    />
+    <meta
+      property="og:description"
+      content="히토미, 이헨 등 태그 검색용 사이트"
+    />
+    <meta property="og:title" content="SearchResult - 태그위키" />
+    <meta name="description" content="히토미, 이헨 등 태그 검색용 사이트" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <style>
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}
+    </style>
+    <style>
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="/playground_assets/my project.png"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./home.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <header data-role="Header" class="search-bar-header">
+          <div class="search-bar-header-search">
+            <button
+              onclick="window.location.href=window.location.origin"
+              class="search-bar-home-btn button"
+            >
+              <svg viewBox="0 0 1024 1024" class="search-bar-home-icon">
+                <path
+                  d="M426 854h-212v-342h-128l426-384 426 384h-128v342h-212v-256h-172v256z"
+                ></path>
+              </svg>
+            </button>
+            <input
+              type="text"
+              id="main-search"
+              placeholder="태그 검색"
+              class="search-bar-search-tag-input input"
+            />
+            <button
+              onclick="searchEventHandler()"
+              class="search-bar-search-tag-button button search"
+            >
+              <svg
+                id="search-button"
+                viewBox="0 0 1024 1024"
+                class="search-bar-search-icon"
+              >
+                <path
+                  d="M406 598q80 0 136-56t56-136-56-136-136-56-136 56-56 136 56 136 136 56zM662 598l212 212-64 64-212-212v-34l-12-12q-76 66-180 66-116 0-197-80t-81-196 81-197 197-81 196 81 80 197q0 42-20 95t-46 85l12 12h34z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </header>
+        <div class="home-tag-count-title">
+          <h1 id="tag-count-var" class="page-title">0</h1>
+          <h1 class="page-title">개의 태그 정보</h1>
+        </div>
+        <div class="home-random-tag-gen section-window">
+          <strong class="section-title"><span>랜덤 태그 추천</span></strong>
+          <div class="home-tag-container">
+            <span id="tag-var" class="tag-txt">TagVar</span>
+            <div class="features-all-tag-feature-btn-group">
+              <button class="features-all-tag-search-btn button feature-btn">
+                <svg
+                  viewBox="0 0 1024 1024"
+                  class="features-all-search-btn-icon"
+                >
+                  <path
+                    d="M406 598q80 0 136-56t56-136-56-136-136-56-136 56-56 136 56 136 136 56zM662 598l212 212-64 64-212-212v-34l-12-12q-76 66-180 66-116 0-197-80t-81-196 81-197 197-81 196 81 80 197q0 42-20 95t-46 85l12 12h34z"
+                  ></path>
+                </svg>
+              </button>
+              <button class="features-all-tag-copy-btn button feature-btn">
+                <svg viewBox="0 0 1024 1024" class="features-all-copy-icon">
+                  <path
+                    d="M810 896v-598h-468v598h468zM810 214q34 0 60 25t26 59v598q0 34-26 60t-60 26h-468q-34 0-60-26t-26-60v-598q0-34 26-59t60-25h468zM682 42v86h-512v598h-84v-598q0-34 25-60t59-26h512z"
+                  ></path>
+                </svg>
+              </button>
+              <button class="features-all-tag-view-btn button feature-btn">
+                <svg viewBox="0 0 1024 1024" class="features-all-go-icon">
+                  <path
+                    d="M192 64v768h768v-768h-768zM896 768h-640v-640h640v640zM128 896v-672l-64-64v800h800l-64-64h-672z"
+                  ></path>
+                  <path
+                    d="M352 256l160 160-192 192 96 96 192-192 160 160v-416z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

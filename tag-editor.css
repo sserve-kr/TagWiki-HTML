@@ -1,0 +1,109 @@
+.search-bar-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  padding-bottom: var(--dl-space-space-unit);
+  justify-content: space-between;
+  background-color: #3174ff;
+}
+.search-bar-header-search {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.search-bar-home-btn {
+  display: flex;
+  border-width: 0px;
+  border-radius: 0px;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0);
+}
+.search-bar-home-icon {
+  width: var(--dl-size-size-small);
+  height: var(--dl-size-size-small);
+}
+.search-bar-search-tag-input {
+  width: 80%;
+}
+.search-bar-search-tag-button {
+  width: var(--dl-size-size-small);
+  height: var(--dl-size-size-small);
+  display: flex;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  flex-direction: row;
+  padding-bottom: 0px;
+}
+.search-bar-search-icon {
+  width: var(--dl-size-size-small);
+  height: var(--dl-size-size-small);
+}
+
+
+@media(max-width: 991px) {
+  .search-bar-search-tag-input {
+    width: 80%;
+  }
+}
+@media(max-width: 767px) {
+  .search-bar-header {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+}
+@media(max-width: 479px) {
+  .search-bar-header {
+    padding: var(--dl-space-space-unit);
+  }
+}
+
+.tag-editor-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.tag-editor-center {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.tag-editor-tag-group {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.tag-editor-item-container1 {
+  flex: 0 0 auto;
+  display: flex;
+  margin-top: 20px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+.tag-editor-desc-group {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.tag-editor-item-container2 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
