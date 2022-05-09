@@ -1,0 +1,30 @@
+.features_all-tag-feature-btn-group {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.features_all-tag-search-btn {
+  display: flex;
+  flex-direction: row;
+}
+.features_all-search-btn-icon {
+  width: 100%;
+  height: 100%;
+}
+.features_all-tag-copy-btn {
+  display: flex;
+  flex-direction: row;
+}
+.features_all-copy-icon {
+  width: 100%;
+  height: 100%;
+}
+.features_all-tag-view-btn {
+  display: flex;
+  flex-direction: row;
+}
+.features_all-go-icon {
+  width: 100%;
+  height: 100%;
+}

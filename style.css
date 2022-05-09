@@ -1,0 +1,189 @@
+:root {
+  --dl-color-gray-500: #595959;
+  --dl-color-gray-700: #999999;
+  --dl-color-gray-900: #D9D9D9;
+  --dl-size-size-large: 144px;
+  --dl-size-size-small: 48px;
+  --dl-color-danger-300: #A22020;
+  --dl-color-danger-500: #BF2626;
+  --dl-color-danger-700: #E14747;
+  --dl-color-gray-black: #000000;
+  --dl-color-gray-white: #FFFFFF;
+  --dl-size-size-medium: 96px;
+  --dl-size-size-xlarge: 192px;
+  --dl-size-size-xsmall: 16px;
+  --dl-space-space-unit: 16px;
+  --dl-color-primary-100: #003EB3;
+  --dl-color-primary-300: #0074F0;
+  --dl-color-primary-500: #14A9FF;
+  --dl-color-primary-700: #85DCFF;
+  --dl-color-success-300: #199033;
+  --dl-color-success-500: #32A94C;
+  --dl-color-success-700: #4CC366;
+  --dl-size-size-xxlarge: 288px;
+  --dl-size-size-maxwidth: 1400px;
+  --dl-radius-radius-round: 50%;
+  --dl-space-space-halfunit: 8px;
+  --dl-space-space-sixunits: 96px;
+  --dl-space-space-twounits: 32px;
+  --dl-radius-radius-radius2: 2px;
+  --dl-radius-radius-radius4: 4px;
+  --dl-radius-radius-radius8: 8px;
+  --dl-space-space-fiveunits: 80px;
+  --dl-space-space-fourunits: 64px;
+  --dl-space-space-threeunits: 48px;
+  --dl-space-space-oneandhalfunits: 24px;
+}
+.button {
+  color: var(--dl-color-gray-black);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.input {
+  color: var(--dl-color-gray-black);
+  cursor: auto;
+  padding: 0.5rem 1rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.textarea {
+  color: var(--dl-color-gray-black);
+  cursor: auto;
+  padding: 0.5rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.list {
+  width: 100%;
+  margin: 1em 0px 1em 0px;
+  display: block;
+  padding: 0px 0px 0px 1.5rem;
+  list-style-type: none;
+  list-style-position: outside;
+}
+.list-item {
+  display: list-item;
+}
+.teleport-show {
+  display: flex !important;
+}
+.search {
+  margin-left: var(--dl-space-space-unit);
+  border-style: none;
+  background-color: #3174ff;
+}
+.page-title {
+  margin: 3% 0 3% 0;
+  font-size: 400%;
+}
+.section-title {
+  font-size: 150%;
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.section {
+  flex: 0 0 auto;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.section-window {
+  margin: 15px 15px 15px 15px;
+  display: flex;
+  padding: 20px 10px 20px 10px;
+  align-items: center;
+  flex-direction: column;
+}
+.feature-btn {
+  padding: 3px 3px 3px 3px;
+  max-width: 25px;
+  max-height: 25px;
+  background-color: var(--dl-color-gray-500);
+}
+.tag-txt {
+  font-size: 100%;
+  margin-right: 5%;
+}
+.form-item {
+  flex: 0 0 auto;
+  display: flex;
+  margin-top: 20px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+.form {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.heading {
+  font-size: 32px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
+.content {
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
+@media(max-width: 991px) {
+  .page-title {
+    font-size: 350%;
+  }
+  .section-title {
+    font-size: 120%;
+  }
+  .feature-btn {
+    padding: 2px 2px 2px 2px;
+    max-width: 20px;
+    max-height: 20px;
+  }
+  .tag-txt {
+    font-size: 80%;
+    margin-right: 5%;
+  }
+}
+@media(max-width: 767px) {
+  .page-title {
+    font-size: 320%;
+  }
+  .section-title {
+    font-size: 100%;
+  }
+  .feature-btn {
+    padding: 2px 2px 2px 2px;
+    max-width: 17px;
+    max-height: 17px;
+  }
+  .tag-txt {
+    font-size: 70%;
+    margin-right: 4%;
+  }
+}
+@media(max-width: 479px) {
+  .page-title {
+    font-size: 250%;
+  }
+  .section-title {
+    font-size: 80%;
+  }
+  .tag-txt {
+    font-size: 60%;
+    margin-right: 4%;
+  }
+}
