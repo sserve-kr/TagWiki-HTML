@@ -87,12 +87,13 @@
   align-items: flex-start;
   flex-direction: column;
 }
+.tag-editor-item-container {
+  align-items: flex-start;
+}
 .tag-editor-item-container1 {
   flex: 0 0 auto;
   display: flex;
-  margin-top: 20px;
   align-items: flex-start;
-  margin-bottom: 20px;
   flex-direction: column;
 }
 .tag-editor-desc-group {
