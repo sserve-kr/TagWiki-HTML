@@ -125,6 +125,12 @@
   margin-top: 50px;
   margin-bottom: 50px;
 }
+.link-button {
+  padding: 5px 10px 5px 10px;
+  border-color: var(--dl-color-primary-500);
+  border-radius: 30px;
+  background-color: var(--dl-color-primary-700);
+}
 .heading {
   font-size: 32px;
   font-family: Inter;
@@ -145,16 +151,7 @@
   .page-title {
     font-size: 350%;
   }
-  .section-title {
-    font-size: 120%;
-  }
-  .feature-btn {
-    padding: 2px 2px 2px 2px;
-    max-width: 20px;
-    max-height: 20px;
-  }
   .tag-txt {
-    font-size: 80%;
     margin-right: 5%;
   }
 }
@@ -162,16 +159,7 @@
   .page-title {
     font-size: 320%;
   }
-  .section-title {
-    font-size: 100%;
-  }
-  .feature-btn {
-    padding: 2px 2px 2px 2px;
-    max-width: 17px;
-    max-height: 17px;
-  }
   .tag-txt {
-    font-size: 70%;
     margin-right: 4%;
   }
 }
@@ -179,11 +167,7 @@
   .page-title {
     font-size: 250%;
   }
-  .section-title {
-    font-size: 80%;
-  }
   .tag-txt {
-    font-size: 60%;
     margin-right: 4%;
   }
 }

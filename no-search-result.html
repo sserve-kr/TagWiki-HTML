@@ -2,20 +2,7 @@
 
 <html lang="kr">
   <head>
-    <title>태그위키</title>
-    <meta
-      property="og:image"
-      content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/23212af9-6e07-4599-a081-581bb35f30ab/d27e55ef-eec4-4bb8-b5a1-a605dc5bebd2?org_if_sml=1"
-    />
-    <meta
-      property="og:description"
-      content="히토미, 이헨 등 태그 검색용 사이트"
-    />
-    <meta property="og:title" content="태그위키" />
-    <meta name="description" content="히토미, 이헨 등 태그 검색용 사이트" />
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoSearchResult - 태그위키</title>
     <meta
       property="og:image"
       content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/23212af9-6e07-4599-a081-581bb35f30ab/d27e55ef-eec4-4bb8-b5a1-a605dc5bebd2?org_if_sml=1"
@@ -85,10 +72,13 @@
   </head>
   <body>
     <div>
-      <link href="./home.css" rel="stylesheet" />
+      <link href="./no-search-result.css" rel="stylesheet" />
 
-      <div class="home-container">
-        <header data-role="Header" class="search-bar-header">
+      <div class="no-search-result-container">
+        <header
+          data-role="Header"
+          class="search-bar-header search-bar-root-class-name2"
+        >
           <div class="search-bar-header-search">
             <button
               onclick="window.location.href=window.location.origin"
@@ -122,44 +112,23 @@
             </button>
           </div>
         </header>
-        <div class="home-tag-count-title">
-          <h1 id="tag-count-var" class="page-title">0</h1>
-          <h1 class="page-title">개의 태그 정보</h1>
-        </div>
-        <div class="home-random-tag-gen section-window">
-          <strong class="section-title"><span>랜덤 태그 추천</span></strong>
-          <div class="home-tag-container">
-            <span id="tag-var" class="tag-txt">TagVar</span>
-            <div class="features-all-tag-feature-btn-group">
-              <button class="features-all-tag-search-btn button feature-btn">
-                <svg
-                  viewBox="0 0 1024 1024"
-                  class="features-all-search-btn-icon"
-                >
-                  <path
-                    d="M406 598q80 0 136-56t56-136-56-136-136-56-136 56-56 136 56 136 136 56zM662 598l212 212-64 64-212-212v-34l-12-12q-76 66-180 66-116 0-197-80t-81-196 81-197 197-81 196 81 80 197q0 42-20 95t-46 85l12 12h34z"
-                  ></path>
-                </svg>
-              </button>
-              <button class="features-all-tag-copy-btn button feature-btn">
-                <svg viewBox="0 0 1024 1024" class="features-all-copy-icon">
-                  <path
-                    d="M810 896v-598h-468v598h468zM810 214q34 0 60 25t26 59v598q0 34-26 60t-60 26h-468q-34 0-60-26t-26-60v-598q0-34 26-59t60-25h468zM682 42v86h-512v598h-84v-598q0-34 25-60t59-26h512z"
-                  ></path>
-                </svg>
-              </button>
-              <button class="features-all-tag-view-btn button feature-btn">
-                <svg viewBox="0 0 1024 1024" class="features-all-go-icon">
-                  <path
-                    d="M192 64v768h768v-768h-768zM896 768h-640v-640h640v640zM128 896v-672l-64-64v800h800l-64-64h-672z"
-                  ></path>
-                  <path
-                    d="M352 256l160 160-192 192 96 96 192-192 160 160v-416z"
-                  ></path>
-                </svg>
-              </button>
-            </div>
-          </div>
+        <div class="no-search-result-container1">
+          <h1 class="page-title">
+            <span>검색 결과를</span>
+            <br />
+            <span>찾을 수 없었어요.</span>
+          </h1>
+          <span class="no-search-result-text4">
+            태그가 없다면 본인이 추가해 보는건 어떨까요?
+          </span>
+          <a
+            href="&#123;% url 'front:edit' editmode=1 %&#125;"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="link-button"
+          >
+            태그 추가
+          </a>
         </div>
       </div>
     </div>
