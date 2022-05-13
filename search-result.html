@@ -166,10 +166,11 @@
             </div>
             <p id="content">설명을 찾을 수 없습니다. 직접 추가해 보세요.</p>
             <a
-              href="https://example.com"
+              href="{% url 'front:edit' editmode=2 %}?tag_id="
               target="_blank"
               rel="noreferrer noopener"
               class="link-button"
+              id="add-desc"
             >
               설명 추가
             </a>
