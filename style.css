@@ -138,6 +138,7 @@
   margin-bottom: 50px;
 }
 .link-button {
+  display: block;
   padding: 5px 10px 5px 10px;
   margin-top: 10px;
   border-color: var(--dl-color-primary-500);
